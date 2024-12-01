@@ -1,11 +1,12 @@
 ## Hi there 👋
 
+# Jayprakash Pal
+## Flutter Developer | Cross-Platform Mobile Application Specialist
 
---------------------------------------------------------- --------------------------- -------------------------------
-  Mumbai, India                                                   Jayprakash Pal                        (+91)9082691348
-  <https://www.linkedin.com/in/jayprakash-pal-7712b42a1/>         Flutter Developer       <jayprakash.pal888@gmail.com>
-
-  --------------------------------------------------------- --------------------------- -------------------------------
+**Location:** Mumbai, India
+**Phone:** (+91) 9082691348
+**Email:** jayprakash.pal888@gmail.com
+**LinkedIn:** https://www.linkedin.com/in/jayprakash-pal-7712b42a1/
 
 A driven Flutter developer with 3+ years of experience in mobile application development. Proficient in designing, developing, and delivering high-quality cross-platform applications for Android, iOS, and web platforms. Adept at collaborating with teams to meet deadlines while ensuring a seamless user experience.
 
