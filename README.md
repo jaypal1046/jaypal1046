@@ -30,7 +30,7 @@ A driven Flutter developer with 3+ years of experience in mobile application dev
 
 -   **Mobile Developer**
 
-> **Idealake Information Technologies Pvt. Ltd. | Dec 2023 -- Present | Mumbai, India**
+**Idealake Information Technologies Pvt. Ltd. | Dec 2023 -- Present | Mumbai, India**
 
     - Full-time employee at Idealake, providing expertise as a Consultant for ICICI Lombard.
 
@@ -38,16 +38,16 @@ A driven Flutter developer with 3+ years of experience in mobile application dev
 
     - Developed a Ripple-like communication platform and contributed to Axis Neo for RM, improving transaction management across Android, iOS, and Web.
 
-> **Consultant - Flutter Developer**
-> **ICICI Lombard General Insurance Company Limited | Jun 2024 -- Present | Mumbai, India**
+**Consultant - Flutter Developer**
+**ICICI Lombard General Insurance Company Limited | Jun 2024 -- Present | Mumbai, India**
 
     - Developed and maintained scalable cross-platform applications, ensuring high performance and reliability.
 
     - Integrated secure APIs and applied Bloc with Clean Architecture for ILTakeCare, designing UI and API integration.
 
--   **Flutter Developer**
+**Flutter Developer**
 
-> **Bizzfinity Technology Pvt. Ltd. | Nov 2021 -- Nov 2023 | Mumbai, India**
+**Bizzfinity Technology Pvt. Ltd. | Nov 2021 -- Nov 2023 | Mumbai, India**
 
     - Launched 'ImmunOmate' and 'ImmunOmate SP', achieving 1,000+ downloads on Google Play and the App Store.
 
@@ -61,9 +61,9 @@ A driven Flutter developer with 3+ years of experience in mobile application dev
 
         - Acharya4life: Led UI design and managed API/Firebase integration.
 
--   **Flutter Developer (Intern)**
+**Flutter Developer (Intern)**
 
-> **Bizzfinity Technology Pvt. Ltd. | Aug 2021 -- Nov 2021 | Mumbai, India**
+**Bizzfinity Technology Pvt. Ltd. | Aug 2021 -- Nov 2021 | Mumbai, India**
 
     - Initiated 'ImmunOmate' and 'ImmunOmate SP' app development, focusing on architecture and UI design.
 
