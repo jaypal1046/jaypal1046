@@ -31,7 +31,6 @@ A driven Flutter developer with 3+ years of experience in mobile application dev
 -   **Mobile Developer**
 
 **Idealake Information Technologies Pvt. Ltd. | Dec 2023 -- Present | Mumbai, India**
-
     - Full-time employee at Idealake, providing expertise as a Consultant for ICICI Lombard.
 
     - Implemented Firebase Analytics for user tracking and optimized performance across web and mobile platforms.
