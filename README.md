@@ -37,13 +37,6 @@ A driven Flutter developer with 3+ years of experience in mobile application dev
 
     - Developed a Ripple-like communication platform and contributed to Axis Neo for RM, improving transaction management across Android, iOS, and Web.
 
-**Consultant - Flutter Developer**
-**ICICI Lombard General Insurance Company Limited | Jun 2024 -- Present | Mumbai, India**
-
-    - Developed and maintained scalable cross-platform applications, ensuring high performance and reliability.
-
-    - Integrated secure APIs and applied Bloc with Clean Architecture for ILTakeCare, designing UI and API integration.
-
 **Flutter Developer**
 
 **Bizzfinity Technology Pvt. Ltd. | Nov 2021 -- Nov 2023 | Mumbai, India**
