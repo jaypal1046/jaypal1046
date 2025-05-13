@@ -123,9 +123,3 @@ A driven Flutter developer with 3+ years of experience in mobile application dev
 -   **HSC:** The BSGD Junior College. **2017 -- 2018**
 
 -   **SSC:** Sheth NL high school. **2015 -- 2016**
-
-## Interests
-
--   Reading news and book
-
--   Playing Cricket and football
