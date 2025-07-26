@@ -8,7 +8,19 @@
 **Email:** jayprakash.pal888@gmail.com <br />
 **LinkedIn:** https://www.linkedin.com/in/jayprakash-pal-7712b42a1/
 
-A driven Flutter developer with 3+ years of experience in mobile application development. Proficient in designing, developing, and delivering high-quality cross-platform applications for Android, iOS, and web platforms. Adept at collaborating with teams to meet deadlines while ensuring a seamless user experience.
+Results-driven Flutter Developer with 4 years** of experience designing, developing, and optimizing high-impact, cross-platform mobile and web apps for Android, iOS, and Web platforms. Leverage Flutter, Dart, and tools like Firebase to build scalable, user-centric solutions with clean architecture and efficient state management (Bloc, Provider, GetX).
+
+**Key Skills**
+- Proficient in RESTful API integrations, database management (Firebase, Hive, SQLite), and performance optimization to boost user engagement by **30%** and reduce load times.
+- Expertise in intuitive UI/UX design using Figma, MVVM/MVC patterns, and Git for seamless collaboration.
+- Skilled in cross-functional team environments, delivering projects on tight deadlines with Agile methodologies.
+
+**Accomplishments**
+- **Led** development of ImmunOmate (preventive healthcare app with **1,000+ downloads**), integrating real-time Firebase analytics.
+- Contributed to ILTakeCare (insurance management app with **10M+ downloads**) and Axis Neo App (transaction banking platform), enhancing UX and API functionality.
+- Maintainer of open-source 'dead_code_analyzer' plugin (**500+ downloads** on pub.dev), streamlining code quality for developers.
+- Consistently delivered innovative, tailored solutions that drive business growth and user satisfaction.
+
 
 ## Skills and Core Competencies
 
