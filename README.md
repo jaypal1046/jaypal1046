@@ -1,12 +1,12 @@
 ## Hi there 👋
 
 # Jayprakash Pal
-## Flutter Developer | Cross-Platform Mobile Application Specialist
+## Flutter Developer | Dart CLI Plugin Author | Scalable Cross-Platform App Developer | BLoC • Provider • GetX | Clean Architecture & Code Quality Advocate
 
 **Location:** Mumbai, India <br />
 **Phone:** (+91) 9082691348 <br />
 **Email:** jayprakash.pal888@gmail.com <br />
-**LinkedIn:** https://www.linkedin.com/in/jayprakash-pal-7712b42a1/
+**LinkedIn:** https://www.linkedin.com/in/jayprakashpal1005/
 
 Results-driven Flutter Developer with 4 years** of experience designing, developing, and optimizing high-impact, cross-platform mobile and web apps for Android, iOS, and Web platforms. Leverage Flutter, Dart, and tools like Firebase to build scalable, user-centric solutions with clean architecture and efficient state management (Bloc, Provider, GetX).
 
