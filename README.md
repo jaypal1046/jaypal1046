@@ -116,7 +116,7 @@ final loginSuite = TestSuite(
 CLI plugin that finds unused code in Flutter/Dart projects. Custom exclusion patterns, monorepo support, CI/CD integration. Hit **500+ downloads in the first 15 days**.
 
 [![pub.dev](https://img.shields.io/pub/v/dead_code_analyzer?style=flat-square&logo=dart)](https://pub.dev/packages/dead_code_analyzer)
-[![Downloads](https://img.shields.io/badge/downloads-500+-brightgreen?style=flat-square)](https://pub.dev/packages/dead_code_analyzer)
+[![Downloads](https://img.shields.io/badge/downloads-1K+-brightgreen?style=flat-square)](https://pub.dev/packages/dead_code_analyzer)
 
 ---
 
