@@ -1,137 +1,180 @@
-## Hi there 👋
+<div align="center">
 
-# Jayprakash Pal
-## Flutter Developer | Dart CLI Plugin Author | Scalable Cross-Platform App Developer | BLoC • Provider • GetX | Clean Architecture & Code Quality Advocate
+# 👋 Hey, I'm Jayprakash Pal
 
-**Location:** Mumbai, India <br />
-**Phone:** (+91) 9082691348 <br />
-**Email:** jayprakash.pal888@gmail.com <br />
-**LinkedIn:** https://www.linkedin.com/in/jayprakashpal1005/
+**Flutter Developer · Open Source Creator · Compiler Nerd**
 
-Results-driven Flutter Developer with 4 years** of experience designing, developing, and optimizing high-impact, cross-platform mobile and web apps for Android, iOS, and Web platforms. Leverage Flutter, Dart, and tools like Firebase to build scalable, user-centric solutions with clean architecture and efficient state management (Bloc, Provider, GetX).
+*I build things that run everywhere — and tools that help others build better*
 
-**Key Skills**
-- Proficient in RESTful API integrations, database management (Firebase, Hive, SQLite), and performance optimization to boost user engagement by **30%** and reduce load times.
-- Expertise in intuitive UI/UX design using Figma, MVVM/MVC patterns, and Git for seamless collaboration.
-- Skilled in cross-functional team environments, delivering projects on tight deadlines with Agile methodologies.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jayprakashpal1005/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://jayprakashpal.web.app/)
+[![FlutterJS](https://img.shields.io/badge/FlutterJS-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutterjs.dev/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jayprakash.pal888@gmail.com)
 
-**Accomplishments**
-- **Led** development of ImmunOmate (preventive healthcare app with **1,000+ downloads**), integrating real-time Firebase analytics.
-- Contributed to ILTakeCare (insurance management app with **10M+ downloads**) and Axis Neo App (transaction banking platform), enhancing UX and API functionality.
-- Maintainer of open-source 'dead_code_analyzer' plugin (**500+ downloads** on pub.dev), streamlining code quality for developers.
-- Consistently delivered innovative, tailored solutions that drive business growth and user satisfaction.
+</div>
 
+---
 
-## Skills and Core Competencies
+## About Me
 
--   **Languages & Frameworks:** Dart, Flutter, Python, REST APIs, NodeJs, NextJs
+I'm a Flutter developer from **Mumbai, India** with 4+ years of experience building cross-platform apps that real people use. I've shipped products to **10M+ users**, but what drives me most is solving the hard problems nobody else has tackled yet.
 
--   **Development Tools:** Android Studio, Xcode, VS Code, Postman, Figma, Git, FlutterFlow
+Right now that problem is **Flutter Web's broken SEO** — canvas rendering, bloated bundles, inaccessible output. So I built [FlutterJS](https://flutterjs.dev), a Dart-to-JavaScript compiler that outputs real HTML. It's early, rough around the edges, and I'm building it in the open because I think the direction matters.
 
--   **Platforms:** Android, iOS and Web
+- 🔭 Day job: **Mobile Developer at Idealake**, consulting for **ICICI Lombard**
+- 🛠️ Nights & weekends: Building the **FlutterJS ecosystem** — compiler, SEO, server framework, testing
+- 📍 Mumbai, India
 
--   **Architecture & Patterns:** MVVM, MVC, Clean Architectures, Provider, GetX , Bloc,
+---
 
--   **Database Management:** Firebase, Hive, SQLite, SharedPreferences
+## 🔨 The FlutterJS Ecosystem
 
--   **API & Integration:** Firebase Messaging, OneSignal, Google Play Store, App Store Connect
+> *Flutter Web outputs a canvas blob. Google can't index it. Screen readers can't parse it. Bundles are 2–5 MB. I got tired of working around this.*
 
--   **Soft Skills:** Problem-solving, Leadership, Team collaboration,
+FlutterJS compiles Dart/Flutter to real, semantic HTML+CSS+JS — dropping bundle sizes to **50–100 KB** and unlocking proper SEO. It's early-stage and not production-ready, but the core is working.
 
-## Work Experience
+---
 
--   **Mobile Developer**
+### [`flutterjs`](https://flutterjs.dev) — The Compiler
 
-**Idealake Information Technologies Pvt. Ltd. | Dec 2023 -- Present | Mumbai, India**
-    - Full-time employee at Idealake, providing expertise as a Consultant for ICICI Lombard.
+The core engine. Multi-phase pipeline: AST parsing → IR generation → JavaScript transpilation.
 
-    - Implemented Firebase Analytics for user tracking and optimized performance across web and mobile platforms.
+**What works:** Layout widgets (Container, Row, Column, Stack), Material widgets (Scaffold, AppBar, ElevatedButton, TextField), forms, StatefulWidget + setState, real HTML output.
 
-    - Developed a Ripple-like communication platform and contributed to Axis Neo for RM, improving transaction management across Android, iOS, and Web.
+**What's missing:** Animations, advanced Material widgets, Cupertino, some complex layout edge cases. Honest note — this is pre-alpha. I'm sharing early because people have been asking for this for years and I want to know if the direction is right before sinking more time in.
 
-**Flutter Developer**
+**Next big piece:** Server-side rendering on Node.js — pre-rendered HTML for instant first paint and SEO that works without JavaScript.
 
-**Bizzfinity Technology Pvt. Ltd. | Nov 2021 -- Nov 2023 | Mumbai, India**
+[![Website](https://img.shields.io/badge/flutterjs.dev-Visit-blue?style=flat-square)](https://flutterjs.dev)
+[![GitHub](https://img.shields.io/badge/GitHub-Source-black?style=flat-square&logo=github)](https://github.com/flutterjsdev/flutterjs)
 
-    - Launched 'ImmunOmate' and 'ImmunOmate SP', achieving 1,000+ downloads on Google Play and the App Store.
+---
 
-    - Optimized the user interface for better performance and contributed to the success of key projects:
+### [`flutterjs_server`](https://pub.dev/packages/flutterjs_server) — Write Dart APIs, Run on Node.js
 
-        - Gally Banking: Built the UI and integrated APIs with Firebase for real-time data.
+Write HTTP servers in Dart. Compile them to JavaScript. Deploy anywhere Node.js runs.
 
-        - Moolaah: Designed the UI and managed API/Firebase integration.
+```dart
+@Server(port: 3000)
+class MyApi {
+  @Get('/hello')
+  Response hello() => Response.ok({'message': 'Hello from Dart!'});
 
-        - Currensea: Streamlined the UI and ensured efficient API/Firebase integration.
+  @Post('/users')
+  Response createUser(@Body() Map<String, dynamic> body) {
+    final name = body['name'] as String?;
+    if (name == null) return Response.badRequest({'error': 'name required'});
+    return Response.created({'id': '1', 'name': name});
+  }
+}
+```
 
-        - Acharya4life: Led UI design and managed API/Firebase integration.
+Familiar annotations (`@Get`, `@Post`, `@Param`, `@Body`), built-in middleware (CORS, logger, bearer auth), and proof that the FlutterJS compiler works end-to-end for real server use cases.
 
-**Flutter Developer (Intern)**
+[![pub.dev](https://img.shields.io/pub/v/flutterjs_server?style=flat-square&logo=dart)](https://pub.dev/packages/flutterjs_server)
 
-**Bizzfinity Technology Pvt. Ltd. | Aug 2021 -- Nov 2021 | Mumbai, India**
+---
 
-    - Initiated 'ImmunOmate' and 'ImmunOmate SP' app development, focusing on architecture and UI design.
+### [`flutterjs_seo`](https://pub.dev/packages/flutterjs_seo) — SEO Metadata for FlutterJS Apps
 
-    - Integrated Firebase for real-time data management and analytics.
+Lightweight metadata injection built specifically for FlutterJS web apps. Because the whole point of compiling to real HTML is being able to actually use it — and that means proper meta tags, Open Graph, and indexable content.
 
-## Projects
+[![pub.dev](https://img.shields.io/pub/v/flutterjs_seo?style=flat-square&logo=dart)](https://pub.dev/packages/flutterjs_seo)
+[![Downloads](https://img.shields.io/badge/downloads-127-brightgreen?style=flat-square)](https://pub.dev/packages/flutterjs_seo)
 
--   **ILTakeCare**:
-    Developed a comprehensive health management app designed for ICICI Lombard, providing users with easy access to medical services, health tracking, and emergency assistance. The app integrates various features like doctor consultations, health check-ups, and real-time health monitoring to enhance the user experience and ensure a holistic approach to wellness.
+---
 
-    i)  Built using the **Flutter framework** for a cross-platform solution on Android and iOS.
+### [`flutter_test_pilot`](https://pub.dev/packages/flutter_test_pilot) — Flutter Testing That Reads Like English
 
-    ii) Integrated **RESTful APIs** for seamless communication with backend services.
+A fluent UI testing framework. Zero configuration — works without knowing your app's internal structure, routes, or state setup. Just add the dependency and start writing tests.
 
-    iii) Implemented secure user authentication and data encryption to maintain privacy and compliance with healthcare regulations.
+```dart
+final loginSuite = TestSuite(
+  name: 'User Login Flow',
+  steps: [
+    Type.hint('Email').text('user@example.com'),
+    Type.hint('Password').text('password123'),
+    Tap.text('Login'),
+    Api.post(
+      id: 'login-api',
+      urlPattern: r'/api/auth/login',
+      expectedStatus: 200,
+      responseChecks: [ResponseCheck('token', exists())],
+    ),
+  ],
+);
+```
 
--   **Axis NEO App**:
-    Developed for RM, this app serves as a platform that seamlessly integrates our complete suite of transaction banking products and domain expertise around your business. Delivered through a team that is deeply invested in you, and in step with your business needs. Its developments ensure a consistent experience across Android, iOS and Web.
+17+ widget-finding strategies, API interception + validation, parallel execution, retry logic, rich console & JSON reporting. Works with any architecture — BLoC, Provider, GetX, Riverpod.
 
-    i)  Mobile Development used in Flutter Framework.
+[![pub.dev](https://img.shields.io/pub/v/flutter_test_pilot?style=flat-square&logo=dart)](https://pub.dev/packages/flutter_test_pilot)
 
-    ii) Restful API Integration.
+---
 
-    iii) Delivers the tailored software package to the client.
+### [`dead_code_analyzer`](https://pub.dev/packages/dead_code_analyzer) — Cut the Dead Weight
 
--   **Ripples:**
-    The application serves as our internal social media platform, designed to enhance interaction, and instil confidence within our workforce. Through this internal social media hub, team members can engage in meaningful discussions, receive updates on company initiatives, and cultivate relationships that contribute to a positive and productive work environment.
+CLI plugin that finds unused code in Flutter/Dart projects. Custom exclusion patterns, monorepo support, CI/CD integration. Hit **500+ downloads in the first 15 days**.
 
-    i)  Its developments ensure a consistent experience across Android, iOS and Web.
+[![pub.dev](https://img.shields.io/pub/v/dead_code_analyzer?style=flat-square&logo=dart)](https://pub.dev/packages/dead_code_analyzer)
+[![Downloads](https://img.shields.io/badge/downloads-500+-brightgreen?style=flat-square)](https://pub.dev/packages/dead_code_analyzer)
 
-    ii) Front End Development used in Flutter Framework.
+---
 
-    iii) Firebase analytics and Crashlytics API calling with AES encryptions.
+## 💼 Production Work
 
--   **ImmunOmate**: Android [[Link](https://play.google.com/store/apps/details?id=com.ImmunOmate&pcampaignid=web_share)] [[Link](https://play.google.com/store/apps/details?id=com.ImmunOmatePartner&pcampaignid=web_share)] & iOS [[Link](https://apps.apple.com/in/app/immunomate/id1641884610)][[Link](https://apps.apple.com/in/app/immunomate-sp/id1641913577)]
-    Immunomate is a cutting-edge preventive care mobile app designed to revolutionize the way individuals approach their health and well-being. With a comprehensive range of online services including online doctor consultations, 24x7 access to doctors, emergency assistance, self-checkups, physiotherapy, dietician consultations, and diagnostic services.
+| App | Scale | What I built |
+|---|---|---|
+| **ILTakeCare** (ICICI Lombard) | 10M+ downloads | Flutter UI, Bloc, Clean Architecture, REST APIs |
+| **Axis Neo** (Axis Bank) | Transaction banking platform | Flutter across Android, iOS & Web |
+| **Ripple** (Internal social platform) | Company-wide at Idealake | Flutter, Firebase, AES encryption |
+| **ImmunOmate** | 1,000+ downloads | Led full end-to-end development |
 
-    i)  Developed Android and IOS Apps. Developed User Interface using Flutter Framework
+---
 
--   **Gally Banking**:
-    Gally Banking is an app that helps you find bank branches and their offers. It also provides information on ATMs and currency exchange services.
+## 🧰 Tech Stack
 
-    i)  Developed Android and iOS user interface and used backed as firebase.
+```
+Mobile & Web     →  Flutter · Dart · FlutterFlow
+State Mgmt       →  Bloc · Provider · GetX · Riverpod
+Architecture     →  Clean Architecture · MVVM · MVC
+Backend & APIs   →  Firebase · REST · Node.js · Express.js · WebSocket
+Compiler / Tools →  AST parsing · IR generation · Dart CLI · static analysis
+Databases        →  Firestore · SQLite · Hive · SharedPreferences
+DevOps           →  Firebase Analytics · Crashlytics · CI/CD · Play Store · App Store
+```
 
--   **Moolaah**: [[Link](https://play.google.com/store/apps/details?id=io.moolaah.user&pcampaignid=web_share)]
-    Moolaah is a wealth tech ecosystem that uses technology to provide financial advice and services to individuals and families. Moolaah Partners are financial advisors who work with Moolaah to provide these services.
+---
 
-    i)  Improved User Interface
+## 📈 GitHub Stats
 
-    ii) Added some features.
+<div align="center">
 
--   **Currensea**:
-    Currensea is an app that provides interactive and engaging finance-related courses.
+<!-- GitHub Stats — powered by github-stats-level.vercel.app (reliable alternative) -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jaypal1046&theme=tokyonight" width="100%" />
 
--   **Jayprakash**: [[Link](https://jayprakashpal.web.app/)]
-    Jayprakash is a portfolio website that provides professional information about an individual or a company and presents a showcase of their work. I created this website to learn responsiveness for all devices like mobile, tablets, laptops and desktops. I am Currently Working on responsiveness for mobile desktop view.
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jaypal1046&theme=tokyonight" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jaypal1046&theme=tokyonight" width="49%" />
 
--   **Karate lectures:**
-    Karate Lecture is an Android app which allows users to create meetings as Jitsi Meet, chat with another user, play YouTube videos provided by users and upload videos and play them.
+<!-- FlutterJS Repo Star Card -->
+<br/><br/>
 
-## Education and Certifications
+⭐ **If FlutterJS has helped you, starring the repo helps others find it**
 
--   **B.Sc. Information Technology**: Nagindas Khandwala College, Mumbai. **2018 -- 2021**
+[![FlutterJS](https://img.shields.io/github/stars/flutterjsdev/flutterjs?style=for-the-badge&logo=github&label=flutterjsdev%2Fflutterjs&color=02569B)](https://github.com/flutterjsdev/flutterjs)
+[![Forks](https://img.shields.io/github/forks/flutterjsdev/flutterjs?style=for-the-badge&logo=github&color=02569B)](https://github.com/flutterjsdev/flutterjs/fork)
 
--   **HSC:** The BSGD Junior College. **2017 -- 2018**
+</div>
 
--   **SSC:** Sheth NL high school. **2015 -- 2016**
+---
+
+## 🎓 Education
+
+**B.Sc. Information Technology** — Nagindas Khandwala College, Mumbai *(2018–2021)*
+
+---
+
+<div align="center">
+
+**If FlutterJS sounds useful — try it, break it, and tell me what's wrong.** That's exactly what I need. 🚀
+
+</div>
