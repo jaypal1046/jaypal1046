@@ -7,7 +7,7 @@
 *I build things that run everywhere — and tools that help others build better*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jayprakashpal1005/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)]([https://jayprakashpal.web.app/](https://jayprakashpal.flutterjs.dev/))
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)]([https://jayprakashpal.flutterjs.dev/])
 [![FlutterJS](https://img.shields.io/badge/FlutterJS-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutterjs.dev/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jayprakash.pal888@gmail.com)
 
